@@ -229,7 +229,7 @@ st.info("System Notification: Catalog is completely empty. Clear of any historic
 
 --- 4. VIEW LOG TRANSACTION LAYER (LIVE DATAFRAME VIEW) ---
 
-st.markdown("""..."""), unsafe_allow_html=True))
+st.markdown("""...""")), unsafe_allow_html=True)
 
 📋 CENTRAL INTELLIGENCE CATALOG (LIVE RECORD REGISTRY)
 
