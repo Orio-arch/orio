@@ -1,1 +1,2 @@
--e "streamlit\nmysql-connector-python" 
+streamlit
+mysql-connector-python
