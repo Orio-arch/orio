@@ -231,8 +231,6 @@ st.info("System Notification: Catalog is completely empty. Clear of any historic
 
 st.markdown("""...""", unsafe_allow_html=True)
 
-📋 CENTRAL INTELLIGENCE CATALOG (LIVE RECORD REGISTRY)
-
 try:
 conn = get_db_connection()
 df = pd.read_sql_query("SELECT * FROM employees ORDER BY rowid DESC", conn)
