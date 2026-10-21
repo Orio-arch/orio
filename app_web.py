@@ -16,13 +16,12 @@ db_config = {
 # ========================================================
 
 # Database helper functions
+import sqlite3
+
 def get_db_connection():
-    return mysql.connector.connect(
-        host=db_config["host"],
-        user=db_config["user"],
-        password=db_config["password"],
-        database="company_management"
-    )
+    # यह ऑनलाइन सर्वर पर ही 'company_management.db' नाम की फ़ाइल बना देगा
+    return sqlite3.connect("company_management.db", check_same_thread=False)
+
 
 def init_db():
     try:
